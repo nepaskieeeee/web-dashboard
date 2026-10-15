@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+  <meta charset="UTF-8">
+  <title>FloodRoute Admin Dashboard</title>
+</head>
+<body>
+
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+    import { getFirestore } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js";
+
+    // Ang configuration mo mula sa Firebase Console screenshot
+    const firebaseConfig = {
+      apiKey: "AIzaSyDKdDaB-uGDlw_KjJ6LeOSS6h6IZnjlqMU",
+      authDomain: "floodroute-5e0e0.firebaseapp.com",
+      projectId: "floodroute-5e0e0",
+      storageBucket: "floodroute-5e0e0.firebasestorage.app",
+      messagingSenderId: "950611361557",
+      appId: "1:950611361557:web:c18aea4dad0c9a40dab31c"
+    };
+
+    // Initialize Firebase para sa Web browser environment
+    const app = initializeApp(firebaseConfig);
+  </script>
+
+  <script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
